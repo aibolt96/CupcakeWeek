@@ -44,22 +44,22 @@ public class Order {
                 int orderChoice = input.nextInt();
                 input.nextLine();
                 if (orderChoice == 1){
-                    order.add(cupcakeMenu.get(1));
+                    order.add(cupcakeMenu.get(0));
                     System.out.println("Item added to order.");
                 } else if (orderChoice == 2){
-                    order.add(cupcakeMenu.get(2));
+                    order.add(cupcakeMenu.get(1));
                     System.out.println("Item added to order.");
                 } else if (orderChoice == 3){
-                    order.add(cupcakeMenu.get(3));
+                    order.add(cupcakeMenu.get(2));
                     System.out.println("Item added to order.");
                 } else if (orderChoice == 4){
-                    order.add(cupcakeMenu.get(4));
+                    order.add(drinkMenu.get(0));
                     System.out.println("Item added to order.");
                 } else if (orderChoice == 5){
-                    order.add(cupcakeMenu.get(5));
+                    order.add(drinkMenu.get(1));
                     System.out.println("Item added to order.");
                 } else if (orderChoice == 6){
-                    order.add(cupcakeMenu.get(6));
+                    order.add(drinkMenu.get(2));
                     System.out.println("Item added to order.");
                 } else {
                     System.out.println("Sorry, that is not on the menu.");
@@ -101,7 +101,7 @@ public class Order {
                     subtotal = subtotal + drinkMenu.get(2).getPrice();
                 }
             }
-            
+
             System.out.println("$" + subtotal);
             new CreateFile();
             new WriteToFile(order);
